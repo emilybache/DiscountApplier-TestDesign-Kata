@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace Doppelganger
+namespace DiscountApplier
 {
     public class DiscountApplier
     {

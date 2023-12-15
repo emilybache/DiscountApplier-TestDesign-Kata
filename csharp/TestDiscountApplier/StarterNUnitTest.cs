@@ -1,3 +1,4 @@
+using DiscountApplier;
 using NUnit.Framework;
 using Assert = NUnit.Framework.Assert;
 

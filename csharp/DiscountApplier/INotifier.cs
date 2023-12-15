@@ -1,4 +1,4 @@
-﻿namespace Doppelganger
+﻿namespace DiscountApplier
 {
     public interface INotifier
     {
