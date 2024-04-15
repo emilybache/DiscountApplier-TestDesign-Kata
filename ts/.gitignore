@@ -1,0 +1,41 @@
+# Intellij
+*.iml
+.idea
+
+# npm
+node_modules
+yarn-error.log
+
+# build
+/main.js
+/styles.css
+*.js.map
+.log
+/generated/
+
+# obsidian
+/data.json
+/.obsidian
+
+# jest coverage files
+/coverage
+
+# Code analysis output files
+/circular-deps.png
+#/circular-deps.txt
+
+# approval test files
+*.received.*
+
+# osx
+.DS_Store
+
+# asdf
+.tool-versions
+
+# files in local vaults
+**/workspace
+**/workspace.json
+
+# Backup files.
+*.bak

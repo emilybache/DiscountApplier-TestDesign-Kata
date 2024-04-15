@@ -1,0 +1,21 @@
+{
+  "name": "DiscountApplier",
+  "version": "1.0.0",
+  "description": "Kata about test doubles",
+  "main": "index.ts",
+  "author": "Ilyas Landikov",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --ci"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  }
+}
