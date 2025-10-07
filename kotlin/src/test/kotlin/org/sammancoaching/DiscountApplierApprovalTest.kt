@@ -18,7 +18,11 @@ class DiscountApplierApprovalTest {
 
         discountApplier.applyV1(10.0, listOf(user1))
 
-        Approvals.verify(spy)
+        val expected = """
+            Notify one user about a discount
+            notify user1 with message
+            """.trimIndent()
+        Approvals.verify(spy, Options().inline(expected))
     }
 
     @Test
@@ -28,20 +32,11 @@ class DiscountApplierApprovalTest {
 
         discountApplier.applyV1(10.0, listOf(user1, user2))
 
-        Approvals.verify(spy)
-    }
-
-
-    @Test
-    fun bug_with_inline_approvals() {
-        spy.append("This test exposes a bug in inline approvals - it crashes where it should only fail\n")
-        val discountApplier = DiscountApplier(notifier)
-
-        discountApplier.applyV1(10.0, listOf(user1))
-
         val expected = """
-            hello world
-        """.trimIndent()
+            Notify two users about a discount
+            notify user1 with message
+            notify user2 with message
+            """.trimIndent()
         Approvals.verify(spy, Options().inline(expected))
     }
 }
