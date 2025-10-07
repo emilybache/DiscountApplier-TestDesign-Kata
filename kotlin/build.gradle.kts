@@ -12,7 +12,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     testImplementation("io.mockk:mockk:1.13.11")
-    testImplementation("com.approvaltests:approvaltests:25.4.3")
+    testImplementation("com.approvaltests:approvaltests:25.5.0")
 }
 
 tasks.test {
